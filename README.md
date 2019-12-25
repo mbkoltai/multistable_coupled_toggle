@@ -5,7 +5,7 @@ Creating multistability with 2/3/4 stable fixed points by connecting self-activa
 <!--- comments like this --->
 This repository contains a few MATLAB scripts to model the stationary and dynamical behavior of a toggle switch [1] where the two genes (variables) inhibit each other but also have nonlinear self-activation. This is an abstract, ordinary differential equation (ODE) model that does not describe stochastic fluctuations or the details of the underlying biochemical processes (transcription, translation, folding etc), as my interest here was to model multistable behavior in general.
 
-My idea (coming from this paper) was that if the genes are bistable on their own then their nullclines can have 9 intersection points, ie. the two-dimensional systems when these genes are coupled can have up to 4 stable fixed points. Imagine two 'S' letters, one aligned with the x axis, the other with the y - how many times can they intersect?
+My idea (coming from this [2] paper) was that if the genes are bistable on their own then their nullclines can have 9 intersection points, ie. the two-dimensional systems when these genes are coupled can have up to 4 stable fixed points. Imagine two 'S' letters, one aligned with the x axis, the other with the y - how many times can they intersect?
 
 All commands for running calculations and visualizing plots are in the main script [multistable.m](https://github.com/mbkoltai/multistable_coupled_toggle/blob/master/multistable.m), the other files are functions.
 
