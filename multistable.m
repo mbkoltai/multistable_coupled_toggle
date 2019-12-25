@@ -37,9 +37,9 @@ fcn_plot_bifurc_diff_n(roots_real_nonnegat_matr,beta_vals,n_vals,k_val,plot_pars
 %
 % params: n, kAA, kBA, beta_a, kBB, kAB, beta_b
 % n=4; k_val=3/4; beta=1/4
-n=3;
+n=4;
 kAA=3/4; kBB=3/4;
-beta_a=1/5; beta_b=1/5;
+beta_a=1/4; beta_b=1/4;
 kBA=1/2; kAB=1/2;
 params = [n,kAA,1/2,beta_a,kBB,1/2,beta_b];
 % params_cell = num2cell(params);

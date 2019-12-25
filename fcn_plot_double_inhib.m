@@ -19,7 +19,7 @@ if ~isempty(vectorfield_flag)
     stepsize=round(resol_param*numel(A_vals)); 
     A=meshgrid(A_vals(1:stepsize:end))'; B=meshgrid(B_vals(1:stepsize:end));
     params_cell = num2cell(params);
-    [n, kAA, kBA, beta_a, kBB, kAB, beta_b] = deal(params_cell{:});
+    [n,kAA,kBA,beta_a,kBB,kAB, beta_b] = deal(params_cell{:});
     f1=beta_a + ( (A.^n)./(A.^n + kAA^n) ).*( 1 + (kBA^n)./(kBA^n + B.^n) ) - A;
     f2=beta_b + ( (B.^n)./(B.^n + kBB^n) ).*( 1 + (kAB^n)./(kAB^n + A.^n) ) - B;
     quiver(A,B,f1,f2) % ,2
